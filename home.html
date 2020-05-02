@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Smart Store</title>
+  </head>
+  <body>
+
+
+
+
+
+    <!-- Header -->
+   
+
+
+
+
+
+      <div class="header navbar-collapse d-flex justify-content-between">
+        <div class="logo col-lg-6 col-sm-9 mr-auto">
+          <a class="navbar-brand" href="home.html"><img src="logo.png" style="width: 100%;"></a>
+          
+        </div>
+        <div class="sws col-lg-6 col-sm-3 d-lg-flex ">
+          <div class="">
+              <form  class="form-inline my-2 my-lg-0 d-lg-inline-block d-sm-none d-none">
+                   <input class="form-control mr-lg-2" id="a12" type="search" placeholder="Search" aria-label="Search">
+                   <button class="btn btn-info my-2 my-sm-0"id="a11" type="submit">Search</button>
+              </form></div> 
+              <div class="col-lg-2.5 ml-2 d-none d-lg-block">
+                    <button type="button" class="btn btn-info col-0 col-lg-12" id="a13" data-toggle="popover"  data-trigger="hover" title="Here your Wishlist is" >
+                     Wishlist <span class="badge badge-dark" id="a15">7</span>
+                    </button>  
+              </div>     
+              <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle  mx-2 mb-md-2 mb-sm-2 mb-xs-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         My account
+                         </button>
+                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" id="a14" href="#">Login</a>
+                        <a class="dropdown-item" id="a14" href="#">Register</a>
+                   </div>
+              </div>
+              <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle mb-md-2 mb-sm-2 mb-xs-2 mx-2 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Settings <i class="fa fa-gear fa-spin" style="font-size:20px"></i>
+                          </button>
+                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                         <a class="dropdown-item" id="a14" href="#">Account Settings</a>
+                         <a class="dropdown-item" id="a14" href="#">More Settings</a>
+                   </div> 
+        
+               </div>
+         </div>
+       </div>
+
+
+
+
+
+     <!--  Navbar -->
+
+
+
+
+       <nav class="navbar navbar-expand-lg navbar-light navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container1234" onclick="myFunction(this)">
+                   <div class="bar1"></div>
+                 <div class="bar2"></div>
+                 <div class="bar3"></div>
+                </div>
+
+            </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav justify-content-center navigation">
+              <li class="nav-item col-lg-1.5 ml-0 mx-3" id="a16">
+                 <a class="nav-link active"  id="a17" href="#">Home</a>
+              </li>
+              <li class="nav-item col-lg-1.5 mr-auto  mx-3" id="a16">
+                 <a class="nav-link" id="a17" href="#">Computers</a>
+              </li>
+              <li class="nav-item col-lg-1.5  mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >PC Components</a>
+             </li>
+             <li class="nav-item col-lg-1.5   mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >SmartPhones</a>
+             </li>
+             <li class="nav-item col-lg-1.5  mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >Tablets</a>
+             </li>
+             <li class="nav-item col-lg-1.5  mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >TVs</a>
+             </li>
+             <li class="nav-item col-lg-1.5 ml-auto  mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >Contact Us</a>
+             </li>
+             <li class="nav-item col-lg-1.5 mr-0 mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >Help</a>
+             </li>
+      </div>
+      </nav> 
+
+
+
+
+
+<!-- Container -->
+      <!-- first -->
+
+<div class="alert alert-dark mx-auto text-center d-none d-sm-block" role="alert">
+  <h4>You're Welcome</h4>
+   <p>Hello dear friend. Thank you for choosing our web-store.</p>
+  
+   <hr>
+ 
+  <h4>Please Register first.</h4>
+  <br>
+   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <button class="btn1234">Register</button>
+   <hr> 
+  <h4>Already have an account?<br>
+  Log In</h4>
+  <br>
+  <button class="btn1234">Login</button>
+ 
+</div>
+
+
+
+             <!-- carusel -->
+        <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="" data-slide-to="0" class="active"></li>
+            <li data-target="" data-slide-to="1"></li>
+            <li data-target="" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                    <img src="carusel0.png" class="d-block w-100" data-interval="10s" alt="...">
+            <div class="carousel-caption d-none d-lg-block">
+              <h3 style="color:#FCC821 ;">Your Next Gaming PC is waiting for you</h3>
+              <p style="color:#FCC821 ;">New Gaming Monitor and New RGB Gaming PC from Corsair</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="carusel1.jpg"  class="d-block w-100" data-interval="10s" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 style="color:blue ;">Only With Us</h3>
+              <p style="color:blue ;">We will provide you with all the equipments you need</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="carusel2.jfif"  class="d-block w-100" data-interval="10s" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 style="color:#082611 ;">Hurry Up!!!</h3>
+              <p style="color:#082611 ;">Absolutely quality products at affordable prices</p>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+  
+
+
+
+
+
+        <!-- main container -->
+      <div class="container">
+
+
+        <div class="row">
+          <h1>Daily Deals</h1>
+          <div class="card-deck">
+            <div class="card  col-12 col-sm-12 col-md-12">
+              <img src="1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MSI Optix G275C</h5>
+                <p class="card-text">165hz, you are welcome to link me some games that arnt insanely old or meant to be easy to run that run at 165 fps on 1080p on anything less then an modern  gpu...</p>
+                  <p class="card-text mb-0"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <h4 style="color:#FCC821; margin-bottom: 0px; text-align: center; margin-top: 0px; padding-top: 0px; padding-bottom: 0px;">500$</h4>
+                    <h4 style="padding-top: 0px; text-align: center; margin-top:0px;"><del>750$</del></h4>
+                
+              </div>
+            </div>
+            <div class="card col-12  col-sm-12 col-md-12">
+              <img src="2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Laptop for only half pay</h5>
+                <p class="card-text">If you intend to take your computer with you when you’re out and about you’ll want a laptop or a tablet so consider the size, weight and the battery life.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                 <h4 style="color:#FCC821; margin-bottom: 0px; text-align: center; margin-top: 0px; padding-top: 0px; padding-bottom: 0px;">700$</h4>
+                    <h4 style="padding-top: 0px; text-align: center; margin-top:0px;"><del>950$</del></h4>
+              </div>
+            </div>
+            <div class="card col-12  col-sm-12 col-md-12">
+              <img src="3.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">iMac with mouse & keypad</h5>
+                <p class="card-text">Originally released July 2019
+
+                Touch Bar with integrated Touch ID sensor
+                13.3-inch LED-backlit display with IPS technology</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                 <h4 style="color:#FCC821; margin-bottom: 0px; text-align: center; margin-top: 0px; padding-top: 0px; padding-bottom: 0px;">1500$</h4>
+                    <h4 style="padding-top: 0px; text-align: center; margin-top:0px;"><del>2500$</del></h4>
+              </div>
+            </div>
+            <div class="card col-12  col-sm-12 col-md-12">
+              <img src="4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Adobe Full Pack</h5>
+                <p class="card-text">Bringing any experience to life requires keeping everyone on the same page. Designers are constantly communicating a vision and trying to create clarity.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                 <h4 style="color:#FCC821; margin-bottom: 0px; text-align: center; margin-top: 0px; padding-top: 0px; padding-bottom: 0px;">150$</h4>
+                    <h4 style="padding-top: 0px; text-align: center; margin-top:0px;"><del>350$</del></h4>
+              </div>
+            </div>
+            <div class="card col-12  col-sm-12 col-md-12">
+              <img src="5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Razer Keyboard</h5>
+                <p class="card-text">Razer BlackWidow Chroma V2: Esports Gaming Keyboard - Ergonomic Wrist Rest - 5 Dedicated Macro Keys - Razer Green Mechanical Switches</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                 <h4 style="color:#FCC821; margin-bottom: 0px; text-align: center; margin-top: 0px; padding-top: 0px; padding-bottom: 0px;">200$</h4>
+                    <h4 style="padding-top: 0px; text-align: center; margin-top:0px;"><del>300$</del></h4>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+        <div class="row" >
+                  <h1 style="text-align: center;">Categories</h1>
+                  <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
+            <div class="col mb-4">
+              <div class="card h-100">
+                <img src="1a.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Computers</h5>
+                  <p class="card-text">You can Find here your dreams Computer or Laptop</p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card h-100">
+                <img src="2a.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PC Components</h5>
+                  <p class="card-text">You can update your PC components here</p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card h-100">
+                <img src="3a.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Smartphones</h5>
+                  <p class="card-text">Here you can find a really powerfull smartphone</p>
+                </div>
+              </div>
+            </div>
+             <div class="col mb-4">
+              <div class="card h-100">
+                <img src="4a.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tablets</h5>
+                  <p class="card-text">You can find here right tablets for you</p>
+                </div>
+              </div>
+            </div>
+             <div class="col mb-4">
+              <div class="card h-100">
+                <img src="5a.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">TVs</h5>
+                  <p class="card-text">Here you can find comfortable TVs for you and your family</p>
+                </div>
+              </div>
+            </div>
+             <div class="col mb-4">
+              <div class="card h-100">
+                <img src="1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Monitors</h5>
+                  <p class="card-text">Here are serious gaming monitors for you</p>
+                </div>
+              </div>
+            </div>
+             <div class="col mb-4 d-none d-lg-block">
+              <div class="card h-100">
+                <img src="a.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Comming Soon</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 d-none d-lg-block">
+              <div class="card h-100">
+                <img src="a.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Comming Soon</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+</div>
+
+        <div class="row">
+          <h1>New Arrivals</h1>
+          <div class="card-group">
+            <div class="card h-100 col-12 col-sm-12 col-md-12 col-lg">
+              <img src="b3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Riversong Rhythm</h5>
+                <p class="card-text">BT V5.0 + EDR
+                Up to 10 hours of playback time
+                6 Stereo Sound Effects
+                1 year warranty provided by the manufacturer from date of purchase
+                1 year warranty provided
+                </p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h4 style="color:#FCC821; text-align: center;">300$</h4>
+                 <a href="#" class="btn btn-primary ml-3" id="btn12345">+Add to card</a>
+              </div>
+            </div>
+            <div class="card h-100 col-12 col-sm-12 col-md-12 col-lg">
+              <img src="b6.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PS4</h5>
+                <p class="card-text">Discover all of the amazing connectivity and personalization features that make PlayStation®4 the destination for the best gaming and entertainment experiences.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h4 style="color:#FCC821; text-align: center;">700$</h4>
+                <a href="#" class="btn btn-primary ml-3 " id="btn12345">+Add to card</a>
+              </div>
+            </div>
+            <div class="card h-100 col-12 col-sm-12 col-md-12 col-lg">
+              <img src="b1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Thompson</h5>
+                <p class="card-text">Thomson is a brand  marketed in  India by  Super  Plastronics, aabbPvt. Ltd., based on the French television manufacturer that now operates as Technicolor SA.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h4 style="color:#FCC821; text-align: center;">600$</h4>
+                <a href="#" class="btn btn-primary ml-3 " id="btn12345">+Add to card</a>
+              </div>
+            </div>
+            <div class="card h-100 col-12 col-sm-12 col-md-12 col-lg">
+              <img src="b4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">HP Printer</h5>
+                <p class="card-text">HEWLETT-PACKARD ENVY 5530 E-ALL-IN-ONE PRINTER 1200X600 128MB USB <br> 
+                Save time and paper with automatic two-sided printing two-sided printing</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h4 style="color:#FCC821; text-align: center;">500$</h4>
+                <a href="#" class="btn btn-primary ml-3" id="btn12345">+Add to card</a>
+              </div>
+            </div>
+            <div class="card h-100 col-12 col-sm-12 col-md-12 col-lg">
+              <img src="b5.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PC Speaker</h5>
+                <p class="card-text">The best computer speakers deliver incredible soundstage,sometimes even immersive surround sound to elevate your computing experience considerably</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h4 style="color:#FCC821; text-align: center;">100$</h4>
+                <a href="#" class="btn btn-primary ml-3 " id="btn12345">+Add to card</a>
+              </div>
+            </div>
+            <div class="card h-100 col-12 col-sm-12 col-md-12 col-lg">
+              <img src="b2.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Interface. The interface is very simple and easy to navigate.
+                Samsung's Smart Hub also shows ads on the home screen. The selection is pretty  abc nowdays</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h4 style="color:#FCC821; text-align: center;">1000$</h4>
+                <a href="#" class="btn btn-primary ml-3 " id="btn12345">+Add to card</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+              <nav aria-label="...">
+        <ul class="pagination pagination-lg justify-content-center">
+          <li class="page-item active" aria-current="page">
+            <span class="page-link" style="color: black; background-color:  #FCC821; border-color:  #FCC821">
+              1
+              <span class="sr-only">(current)</span>
+            </span>
+          </li>
+          <li class="page-item"  ><a class="page-link" style="color: black;" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" style="color: black;" href="#">3</a></li>
+        </ul>
+      </nav>
+  </div>
+
+
+<!-- Footer -->
+
+    <div class="footer">
+      <div class="row d-block lg-none">
+        <div class="col-12 d-block d-md-none px-0 mr-md-0 text-center">
+          <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5> Office</h5>
+            </div>
+          </div>
+          </div>
+      <div class="col-12 d-block d-md-none px-0 text-center">
+           <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Home</h5>
+            </div>
+          </div></div>
+          <div class="col-12 d-block d-md-none px-0 text-center">
+           <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Phones&More</h5>
+            </div>
+          </div></div>
+          <div class="col-12 d-block d-md-none px-0 text-center">
+           <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Gaming</h5>
+            </div>
+          </div></div>
+          <div class="col-12 d-block d-md-none px-0 text-center">
+           <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Bestsellers</h5>
+            </div>
+          </div></div>
+          </div>
+        <div class="row row-cols-5">
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center" >
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body" style="background-color: black;">
+              <h5>Office</h5>
+
+              Computers <br>
+              Laptops <br>
+              Printers <br>
+              Network <br>
+            </div>
+          </div></div>
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center" >
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body" style="background-color: black;">
+              <h5>Home</h5>
+
+              Cinema <br>
+              Television <br>
+              Laundry <br>
+              Others <br>
+            </div>
+          </div></div>
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center" >
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Phone&More</h5>
+
+              Smartphones <br>
+              Classics <br>
+              Navigation <br>
+              Office Phones <br>
+            </div>
+          </div></div>
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center">
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body"  style="background-color: black;">
+              <h5>Gaming</h5>
+
+              Playstation <br>
+              Nintendo <br>
+              Xbox <br>
+              Consoles <br>
+            </div>
+          </div></div>
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center">
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Bestsellers</h5>
+
+              IPad 2 <br>
+              Lenovo Y500 <br>
+              HTC One <br>
+              IMac Retina <br>
+            </div>
+          </div></div>
+
+          </div>
+          <div class="row " style="background-color: black; color: #FCC821;border-color:  #FCC821;">
+            <div class="col-12 d-md-block d-none">
+              <div class="abc col-6 mr-auto">
+                <h5 class="pl-10 my-3 ml-3">Find Us On:
+                <i class="fa fa-facebook-f ml-10 pl-10" style="font-size:24px;color:#FCC821;"></i>
+              <i class="fa fa-instagram" style="font-size:28px;color:#FCC821;"></i>
+              <i class="fa fa-twitter" style="font-size:28px;color:#FCC821;"></i>
+              <i class="fa fa-youtube" style="font-size:24px;color:#FCC821;"></i></h5>
+              </div>
+
+
+              <div class="abcd col-6 mt-3 ">
+                <h5 style="color:#FCC821; text-align:end; "><i class="fa fa-copyright" style="font-size:24px;color:#FCC821"></i>TUMO CENTER FOR CREATIVE TECHNOLOGIES</h5>
+              </div>
+
+            </div>
+              <div class="col-12 d-block d-md-none">
+                <h5 class="pl-10 my-3 ml-3 text-center" >Find Us On:
+                <i class="fa fa-facebook-f ml-10 pl-10" style="font-size:24px;color:#FCC821;"></i>
+              <i class="fa fa-instagram" style="font-size:28px;color:#FCC821;"></i>
+              <i class="fa fa-twitter" style="font-size:28px;color:#FCC821;"></i>
+              <i class="fa fa-youtube" style="font-size:24px;color:#FCC821;"></i><br>
+              <i class="fa fa-copyright" style="font-size:24px;color:#FCC821"></i>TUMO CENTER FOR CREATIVE TECHNOLOGIES</h5>
+              </div>
+            
+          </div>
+
+
+    </div>
+
+        
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+      $('.popover-dismiss').popover({
+  trigger: 'hover'
+})
+    </script>
+    <script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+
+  </body>
+</html
