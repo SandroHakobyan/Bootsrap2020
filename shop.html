@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Smart Store</title>
+  </head>
+  <body>
+
+
+
+
+
+    <!-- Header -->
+   
+
+
+
+
+
+      <div class="header navbar-collapse d-flex justify-content-between">
+        <div class="logo col-lg-6 col-sm-9 mr-auto">
+          <a class="navbar-brand" href="home.html"><img src="logo.png" style="width: 100%;"></a>
+          
+        </div>
+        <div class="sws col-lg-6 col-sm-3 d-lg-flex ">
+          <div class="">
+              <form  class="form-inline my-2 my-lg-0 d-lg-inline-block d-sm-none d-none">
+                   <input class="form-control mr-lg-2" id="a12" type="search" placeholder="Search" aria-label="Search">
+                   <button class="btn btn-info my-2 my-sm-0"id="a11" type="submit">Search</button>
+              </form></div> 
+              <div class="col-lg-2.5 ml-2 d-none d-lg-block">
+                    <button type="button" class="btn btn-info col-0 col-lg-12" id="a13" data-toggle="popover"  data-trigger="hover" title="Here your Wishlist is" >
+                     Wishlist <span class="badge badge-dark" id="a15">7</span>
+                    </button>  
+              </div>     
+              <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle  mx-2 mb-md-2 mb-sm-2 mb-xs-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         My account
+                         </button>
+                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" id="a14" href="#">Login</a>
+                        <a class="dropdown-item" id="a14" href="#">Register</a>
+                   </div>
+              </div>
+              <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle mb-md-2 mb-sm-2 mb-xs-2 mx-2 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Settings <i class="fa fa-gear fa-spin" style="font-size:20px"></i>
+                          </button>
+                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                         <a class="dropdown-item" id="a14" href="#">Account Settings</a>
+                         <a class="dropdown-item" id="a14" href="#">More Settings</a>
+                   </div> 
+        
+               </div>
+         </div>
+       </div>
+
+
+
+
+
+     <!--  Navbar -->
+
+
+
+
+       <nav class="navbar navbar-expand-lg navbar-light navigation px-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container1234" onclick="myFunction(this)">
+                   <div class="bar1"></div>
+                 <div class="bar2"></div>
+                 <div class="bar3"></div>
+                </div>
+
+            </button>
+
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav justify-content-center navigation">
+              <li class="nav-item col-lg-auto col-md-12 col-12 ml-0 mx-3" id="a16">
+                 <a class="nav-link active"  id="a17" href="index.html">Home</a>
+              </li>
+              <li class="nav-item col-lg-auto col-md-12 col-12 mr-auto  mx-3" id="a16">
+                 <a class="nav-link" id="a17" href="shop.html">Computers</a>
+              </li>
+              <li class="nav-item col-lg-auto col-md-12 col-12 ml-0" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >PC Components</a>
+             </li>
+             <li class="nav-item col-lg-auto col-md-12 col-12  mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >SmartPhones</a>
+             </li>
+             <li class="nav-item col-lg-auto col-md-12 col-12 mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >Tablets</a>
+             </li>
+             <li class="nav-item col-lg-auto col-md-12 col-12 mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >TVs</a>
+             </li>
+             <li class="nav-item col-lg-auto col-md-12 col-12 ml-auto  mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >Contact Us</a>
+             </li>
+      </div>
+      </nav> 
+
+
+
+
+
+
+<!-- Container -->
+  
+
+
+  
+      <!-- Filter -->
+        <div class="row border-top mr-0"  style="color: #FCC821; background-color: black;">
+        <div class="d-none d-md-block col-md-3 sidebar border-right border-left border-bottom" style="background-color: black; border-color:black; color: #FCC821">
+            <form style="background-color: black;">
+               <hr style="border-color:#FCC821; ">
+            
+            <select class="custom-select ml-2 my-3" style="color: #FCC821; background-color: black" id="sortBy">
+
+                <option value="1"  id="b1" >Price: Low to High</option>
+                <option value="2"  id="b1"  >Price: High to Low</option>
+                <option value="3"  id="b1" >Rating</option>
+            </select>
+        
+             <hr style="border-color:#FCC821; ">
+                <p style="color: #FCC821; background-color: black;">
+                    <a class="text-primary  ml-3" style="color: #FCC821; background-color: black;" data-toggle="collapse" href="#selectBrand1" role="button"
+                       aria-expanded="false" aria-controls="selectBrand1">
+                        Select Brand
+                    </a>
+                </p>
+                <div class="collapse bg-secondary-0 p-2"  style="color: #FCC821; background-color: black;" id="selectBrand1">
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="lenovo">
+                        <label class="custom-control-label" for="lenovo">Lenovo</label>
+                    </div>
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="apple">
+                        <label class="custom-control-label" for="apple">Apple</label>
+                    </div>
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="asus">
+                        <label class="custom-control-label" for="asus">Asus</label>
+                    </div>
+                </div>
+                <p  style="color: #FCC821; background-color: black;">
+                    <a class="text-primary ml-3"   style="color: #FCC821; background-color: black;" data-toggle="collapse" href="#selectCpu1" role="button"
+                       aria-expanded="false" aria-controls="selectCpu1">
+                        Select CPU
+                    </a>
+                </p>
+                <div class="collapse bg-secondary-0 p-2"  style="color: #FCC821; background-color: black;" id="selectCpu1">
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="i7">
+                        <label class="custom-control-label" for="i7">Core i7</label>
+                    </div>
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="i5">
+                        <label class="custom-control-label" for="i5">Core i5</label>
+                    </div>
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="i3">
+                        <label class="custom-control-label" for="i3">Core i3</label>
+                    </div>
+                </div>
+                <p  style="color: #FCC821; background-color: black;">
+                    <a class="text-primary ml-3"   style="color: #FCC821; background-color: black;" data-toggle="collapse" href="#selectSize1" role="button"
+                       aria-expanded="false" aria-controls="selectSize1">
+                        Select Monitor Size
+                    </a>
+                </p>
+                <div class="collapse bg-secondary-0 p-2"  style="color: #FCC821; background-color: black;" id="selectSize1">
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="14">
+                        <label class="custom-control-label" for="14">14"</label>
+                    </div>
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="15">
+                        <label class="custom-control-label" for="15">15"</label>
+                    </div>
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="17">
+                        <label class="custom-control-label" for="17">17"</label>
+                    </div>
+                </div>
+                 <p style="color: #FCC821; background-color: black;">
+                    <a class="text-primary  ml-3" style="color: #FCC821; background-color: black;" data-toggle="collapse" href="#selectCase" role="button"
+                       aria-expanded="false" aria-controls="selectCase">
+                        Select Case
+                    </a>
+                </p>
+                <div class="collapse bg-secondary-0 p-2"  style="color: #FCC821; background-color: black;" id="selectCase">
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="Corsair">
+                        <label class="custom-control-label" for="Corsair">Corsair</label>
+                    </div>
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="lianli">
+                        <label class="custom-control-label" for="lianli">LianLi</label>
+                    </div>
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="thermaltake">
+                        <label class="custom-control-label" for="thermaltake">Thermaltake</label>
+                    </div>
+                </div>
+                <p  style="color: #FCC821; background-color: black;">
+                    <a class="text-primary ml-3"   style="color: #FCC821; background-color: black;" data-toggle="collapse" href="#selectmotherboard" role="button"
+                       aria-expanded="false" aria-controls="selectmotherboard">
+                        Select Motherboard
+                    </a>
+                </p>
+                <div class="collapse bg-secondary-0 p-2"  style="color: #FCC821; background-color: black;" id="selectmotherboard">
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="Asus">
+                        <label class="custom-control-label" for="Asus">Asus ROG</label>
+                    </div>
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="Msi">
+                        <label class="custom-control-label" for="Msi">MSI Godlike</label>
+                    </div>
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="Aorus">
+                        <label class="custom-control-label" for="Aorus">Aorus</label>
+                    </div>
+                </div>
+                <p  style="color: #FCC821; background-color: black;">
+                    <a class="text-primary ml-3"   style="color: #FCC821; background-color: black;" data-toggle="collapse" href="#selectRamSize" role="button"
+                       aria-expanded="false" aria-controls="selectRamSize">
+                        Select RAM Size
+                    </a>
+                </p>
+                <div class="collapse bg-secondary-0 p-2"  style="color: #FCC821; background-color: black;" id="selectRamSize">
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="16GB">
+                        <label class="custom-control-label" for="16GB">16GB</label>
+                    </div>
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="32GB">
+                        <label class="custom-control-label" for="32GB">32GB</label>
+                    </div>
+                    <div class="custom-control custom-checkbox"  style="color: #FCC821; background-color: black;">
+                        <input type="checkbox" class="custom-control-input" id="64GB">
+                        <label class="custom-control-label" for="64GB">64GB</label>
+                    </div>
+                </div>
+                <hr style="border-color:#FCC821; ">
+                <div class="custom-control custom-switch ml-3" style="background-color: black;">
+                    <input type="checkbox" class="custom-control-input" id="imgOnly">
+                    <label class="custom-control-label" for="imgOnly">With Images Only</label>
+                </div>
+                <div class="custom-control custom-switch ml-3" style="background-color: black;">
+                    <input type="checkbox" class="custom-control-input" id="freeImages">
+                    <label class="custom-control-label" for="freeImages">Free Shipping</label>
+                </div>
+                 <hr style="border-color:#FCC821; ">
+
+            </form>
+            </div>
+
+              <!-- Main container -->
+            <div class="col-12 col-md-9 main">
+            <div class="row justify-content-center">
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        
+                          <div class="col-12 col-md-4 col-lg-3">
+                            <a href="single.html"><img class="w-100" src="1a.png" alt=""></a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6>15.6" Inspiron 15 Multi-Touch Laptop (Intel
+                                Core i3, 8GB RAM, 128GB SSD)  </h6>
+                          
+                            <ul class="d-none d-lg-block">
+                                <li>2.2 GHz Intel Core i3-8130U Dual-Core</li>
+                                <li>8GB DDR4 | 128GB SSD</li>
+                                <li>15.6" 1920 x 1080 FHD Touchscreen</li>
+                                <li>Integrated Intel UHD Graphics 730</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 pl-0 text-center h-100">
+                            <div class="display-4">$1000</div>
+                            <button class="btn btn-primary" id="btn12345">Add To Cart</button>
+                        </div>
+                   </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        
+                          <div class="col-12 col-md-4 col-lg-3">
+                            <a href="single.html"><img class="w-100" src="s1.png" alt=""></a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6>21" Inspiron 15 PC (Intel
+                                Core i5, 4GB RAM, 480GB SSD)  </h6>
+                          
+                            <ul class="d-none d-lg-block">
+                                <li>3.0 GHz Intel Core i5-9400 Dual-Core</li>
+                                <li>4GB DDR4 | 480GB SSD</li>
+                                <li>21" 1920 x 1080 FHD Touchscreen</li>
+                                <li>Integrated Intel UHD Graphics 620</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 pl-0 text-center h-100">
+                            <div class="display-4">$1200</div>
+                            <button class="btn btn-primary" id="btn12345">Add To Cart</button>
+                        </div>
+                   </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        
+                          <div class="col-12 col-md-4 col-lg-3">
+                            <a href="single.html"><img class="w-100" src="s2.png" alt=""></a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6>27" Inspiron 16 Gaming PC (Intel
+                                Core i3, 8GB RAM, 128GB SSD)  </h6>
+                          
+                            <ul class="d-none d-lg-block">
+                                <li>3.5 GHz Intel Core i9-9900K</li>
+                                <li>64GB DDR4 | 1TB SSD</li>
+                                <li>27" 1920 x 1080 FHD Touchscreen</li>
+                                <li>NVidia Geforce RTX 2080Ti</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 pl-0 text-center h-100">
+                            <div class="display-4">$5000</div>
+                            <button class="btn btn-primary" id="btn12345">Add To Cart</button>
+                        </div>
+                   </div>
+                </div>
+                  <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        
+                          <div class="col-12 col-md-4 col-lg-3">
+                            <a href="single.html"><img class="w-100" src="s3.jpg" alt=""></a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6>24" Inspiron 12 PC (Intel
+                                Core i7, 16GB RAM, 520GB SSD)  </h6>
+                          
+                            <ul class="d-none d-lg-block">
+                                <li>2.7 GHz Intel Core i3-8130U Dual-Core</li>
+                                <li>16GB DDR4 | 520GB SSD</li>
+                                <li>24" 1920 x 1080 FHD Touchscreen</li>
+                                <li>Integrated Intel UHD Graphics 640</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 pl-0 text-center h-100">
+                            <div class="display-4">$1300</div>
+                            <button class="btn btn-primary" id="btn12345">Add To Cart</button>
+                        </div>
+                   </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        
+                          <div class="col-12 col-md-4 col-lg-3">
+                            <a href="single.html"><img class="w-100" src="s4.jfif" alt=""></a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6>15.6" Inspiron 15 Multi-Touch Laptop (Intel
+                                Core i3, 4GB RAM, 1TB HDD)  </h6>
+                          
+                            <ul class="d-none d-lg-block">
+                                <li>2.2 GHz Intel Core i3-8130U Dual-Core</li>
+                                <li>4GB DDR4 | 1TB HDD</li>
+                                <li>15.6" 1920 x 1080 FHD Touchscreen</li>
+                                <li>Integrated Intel UHD Graphics 620</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 pl-0 text-center h-100">
+                            <div class="display-4">$500</div>
+                            <button class="btn btn-primary" id="btn12345">Add To Cart</button>
+                        </div>
+                   </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        
+                          <div class="col-12 col-md-4 col-lg-3">
+                            <a href="single.html"><img class="w-100" src="s5.jfif" alt=""></a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6>19" Inspiron 17 Multi-Touch Laptop (Intel
+                                Core i7, 32GB RAM, 256GB SSD)  </h6>
+                          
+                            <ul class="d-none d-lg-block">
+                                <li>3.5 GHz Intel Core i7-8700K</li>
+                                <li>32GB DDR4 | 256GB SSD</li>
+                                <li>15.6" 1920 x 1080 FHD Touchscreen</li>
+                                <li>AMD Radeon MX230</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 pl-0 text-center h-100">
+                            <div class="display-4">$1400</div>
+                            <button class="btn btn-primary" id="btn12345">Add To Cart</button>
+                        </div>
+                   </div>
+                </div>
+                
+                 <nav class="col-12 mt-2">
+        <ul class="pagination pagination-lg justify-content-center">
+          <li class="page-item active" aria-current="page">
+            <span class="page-link" style="color: black; background-color:  #FCC821; border-color:  #FCC821">
+              1
+              <span class="sr-only">(current)</span>
+            </span>
+          </li>
+          <li class="page-item"  ><a class="page-link" style="color: black;" href="shop.html">2</a></li>
+          <li class="page-item"><a class="page-link" style="color: black;" href="shop.html">3</a></li>
+        </ul>
+      </nav>
+             </div>
+             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+
+    <div class="footer mr-3">
+      <div class="row d-block lg-none">
+        <div class="col-12 d-block d-md-none px-0 mr-md-0 text-center">
+          <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5> Office</h5>
+            </div>
+          </div>
+          </div>
+      <div class="col-12 d-block d-md-none px-0 text-center">
+           <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Home</h5>
+            </div>
+          </div></div>
+          <div class="col-12 d-block d-md-none px-0 text-center">
+           <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Phones&More</h5>
+            </div>
+          </div></div>
+          <div class="col-12 d-block d-md-none px-0 text-center">
+           <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Gaming</h5>
+            </div>
+          </div></div>
+          <div class="col-12 d-block d-md-none px-0 text-center">
+           <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Bestsellers</h5>
+            </div>
+          </div></div>
+          </div>
+        <div class="row row-cols-5">
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center" >
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body" style="background-color: black;">
+              <h5>Office</h5>
+
+              Computers <br>
+              Laptops <br>
+              Printers <br>
+              Network <br>
+            </div>
+          </div></div>
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center" >
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body" style="background-color: black;">
+              <h5>Home</h5>
+
+              Cinema <br>
+              Television <br>
+              Laundry <br>
+              Others <br>
+            </div>
+          </div></div>
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center" >
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Phone&More</h5>
+
+              Smartphones <br>
+              Classics <br>
+              Navigation <br>
+              Office Phones <br>
+            </div>
+          </div></div>
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center">
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body"  style="background-color: black;">
+              <h5>Gaming</h5>
+
+              Playstation <br>
+              Nintendo <br>
+              Xbox <br>
+              Consoles <br>
+            </div>
+          </div></div>
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center">
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Bestsellers</h5>
+
+              IPad 2 <br>
+              Lenovo Y500 <br>
+              HTC One <br>
+              IMac Retina <br>
+            </div>
+          </div></div>
+
+          </div>
+          <div class="row " style="background-color: black; color: #FCC821;border-color:  #FCC821;">
+            <div class="col-12 d-md-block d-none">
+              <div class="abc col-6 mr-auto">
+                <h5 class="pl-10 my-3 ml-3">Find Us On:
+                <i class="fa fa-facebook-f ml-10 pl-10" style="font-size:24px;color:#FCC821;"></i>
+              <i class="fa fa-instagram" style="font-size:28px;color:#FCC821;"></i>
+              <i class="fa fa-twitter" style="font-size:28px;color:#FCC821;"></i>
+              <i class="fa fa-youtube" style="font-size:24px;color:#FCC821;"></i></h5>
+              </div>
+
+
+              <div class="abcd col-6 mt-3 ">
+                <h5 style="color:#FCC821; text-align:end; "><i class="fa fa-copyright" style="font-size:24px;color:#FCC821"></i>TUMO CENTER FOR CREATIVE TECHNOLOGIES</h5>
+              </div>
+
+            </div>
+              <div class="col-12 d-block d-md-none">
+                <h5 class="pl-10 my-3 ml-3 text-center" >Find Us On:
+                <i class="fa fa-facebook-f ml-10 pl-10" style="font-size:24px;color:#FCC821;"></i>
+              <i class="fa fa-instagram" style="font-size:28px;color:#FCC821;"></i>
+              <i class="fa fa-twitter" style="font-size:28px;color:#FCC821;"></i>
+              <i class="fa fa-youtube" style="font-size:24px;color:#FCC821;"></i><br>
+              <i class="fa fa-copyright" style="font-size:24px;color:#FCC821"></i>TUMO CENTER FOR CREATIVE TECHNOLOGIES</h5>
+              </div>
+            
+          </div>
+
+
+    </div>
+
+        
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+      $('.popover-dismiss').popover({
+  trigger: 'hover'
+})
+    </script>
+    
+  </body>
+</html>

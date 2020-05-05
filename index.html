@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f8e0586a52.js" crossorigin="anonymous"></script>
     <title>Smart Store</title>
   </head>
   <body>
@@ -23,7 +24,7 @@
 
 
 
-      <div class="header navbar-collapse d-flex justify-content-between">
+      <div class="header navbar-collapse d-flex justify-content-center">
         <div class="logo col-lg-6 col-sm-9 mr-auto">
           <a class="navbar-brand" href="home.html"><img src="logo.png" style="width: 100%;"></a>
           
@@ -44,8 +45,8 @@
                          My account
                          </button>
                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" id="a14" href="#">Login</a>
-                        <a class="dropdown-item" id="a14" href="#">Register</a>
+                        <a class="dropdown-item" id="a14" data-toggle="modal" data-target="#login">Login</a>
+                        <a class="dropdown-item" id="a14"  data-toggle="modal" data-target="#register">Register</a>
                    </div>
               </div>
               <div class="dropdown">
@@ -82,32 +83,30 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav justify-content-center navigation">
-              <li class="nav-item col-lg-1.5 ml-0 mx-3" id="a16">
-                 <a class="nav-link active"  id="a17" href="#">Home</a>
+              <li class="nav-item col-lg-auto col-md-12 col-12 ml-0 mx-3" id="a16">
+                 <a class="nav-link active"  id="a17" href="index.html">Home</a>
               </li>
-              <li class="nav-item col-lg-1.5 mr-auto  mx-3" id="a16">
-                 <a class="nav-link" id="a17" href="#">Computers</a>
+              <li class="nav-item col-lg-auto col-md-12 col-12 mr-auto  mx-3" id="a16">
+                 <a class="nav-link" id="a17" href="shop.html">Computers</a>
               </li>
-              <li class="nav-item col-lg-1.5  mx-3" id="a16">
+              <li class="nav-item col-lg-auto col-md-12 col-12 ml-0" id="a16">
                   <a class="nav-link"  id="a17" href="#" >PC Components</a>
              </li>
-             <li class="nav-item col-lg-1.5   mx-3" id="a16">
+             <li class="nav-item col-lg-auto col-md-12 col-12  mx-3" id="a16">
                   <a class="nav-link"  id="a17" href="#" >SmartPhones</a>
              </li>
-             <li class="nav-item col-lg-1.5  mx-3" id="a16">
+             <li class="nav-item col-lg-auto col-md-12 col-12 mx-3" id="a16">
                   <a class="nav-link"  id="a17" href="#" >Tablets</a>
              </li>
-             <li class="nav-item col-lg-1.5  mx-3" id="a16">
+             <li class="nav-item col-lg-auto col-md-12 col-12 mx-3" id="a16">
                   <a class="nav-link"  id="a17" href="#" >TVs</a>
              </li>
-             <li class="nav-item col-lg-1.5 ml-auto  mx-3" id="a16">
+             <li class="nav-item col-lg-auto col-md-12 col-12 ml-auto  mx-3" id="a16">
                   <a class="nav-link"  id="a17" href="#" >Contact Us</a>
-             </li>
-             <li class="nav-item col-lg-1.5 mr-0 mx-3" id="a16">
-                  <a class="nav-link"  id="a17" href="#" >Help</a>
              </li>
       </div>
       </nav> 
+
 
 
 
@@ -141,27 +140,27 @@
              <!-- carusel -->
         <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="" data-slide-to="0" class="active"></li>
-            <li data-target="" data-slide-to="1"></li>
-            <li data-target="" data-slide-to="2"></li>
+            <li data-target="as1" data-slide-to="0" class="active"></li>
+            <li data-target="as2" data-slide-to="1"></li>
+            <li data-target="as3" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-                    <img src="carusel0.png" class="d-block w-100" data-interval="10s" alt="...">
+                    <img src="carusel0.png" class="d-block w-100" data-interval="3" alt="as1">
             <div class="carousel-caption d-none d-lg-block">
               <h3 style="color:#FCC821 ;">Your Next Gaming PC is waiting for you</h3>
               <p style="color:#FCC821 ;">New Gaming Monitor and New RGB Gaming PC from Corsair</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="carusel1.jpg"  class="d-block w-100" data-interval="10s" alt="...">
+            <img src="carusel1.jpg"  class="d-block w-100" data-interval="3" alt="as2">
             <div class="carousel-caption d-none d-md-block">
               <h3 style="color:blue ;">Only With Us</h3>
               <p style="color:blue ;">We will provide you with all the equipments you need</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="carusel2.jfif"  class="d-block w-100" data-interval="10s" alt="...">
+            <img src="carusel2.jfif"  class="d-block w-100" data-interval="3" alt="as3">
             <div class="carousel-caption d-none d-md-block">
               <h3 style="color:#082611 ;">Hurry Up!!!</h3>
               <p style="color:#082611 ;">Absolutely quality products at affordable prices</p>
@@ -183,7 +182,7 @@
         <div class="row">
           <h1>Daily Deals</h1>
           <div class="card-deck">
-            <div class="card  col-12 col-sm-12 col-md-12">
+            <div class="card  col-12 col-sm-12 col-lg-12 col-md-12">
               <img src="1.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">MSI Optix G275C</h5>
@@ -194,7 +193,7 @@
                 
               </div>
             </div>
-            <div class="card col-12  col-sm-12 col-md-12">
+            <div class="card col-12  col-sm-12 col-lg-12 col-md-12">
               <img src="2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Laptop for only half pay</h5>
@@ -204,7 +203,7 @@
                     <h4 style="padding-top: 0px; text-align: center; margin-top:0px;"><del>950$</del></h4>
               </div>
             </div>
-            <div class="card col-12  col-sm-12 col-md-12">
+            <div class="card col-12  col-sm-12 col-lg-12 col-md-12">
               <img src="3.jfif" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">iMac with mouse & keypad</h5>
@@ -217,7 +216,7 @@
                     <h4 style="padding-top: 0px; text-align: center; margin-top:0px;"><del>2500$</del></h4>
               </div>
             </div>
-            <div class="card col-12  col-sm-12 col-md-12">
+            <div class="card col-12  col-sm-12 col-lg-12 col-md-12">
               <img src="4.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Adobe Full Pack</h5>
@@ -227,7 +226,7 @@
                     <h4 style="padding-top: 0px; text-align: center; margin-top:0px;"><del>350$</del></h4>
               </div>
             </div>
-            <div class="card col-12  col-sm-12 col-md-12">
+            <div class="card col-12  col-sm-12 col-lg-12 col-md-12">
               <img src="5.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Razer Keyboard</h5>
@@ -406,8 +405,8 @@
               <span class="sr-only">(current)</span>
             </span>
           </li>
-          <li class="page-item"  ><a class="page-link" style="color: black;" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" style="color: black;" href="#">3</a></li>
+          <li class="page-item"  ><a class="page-link" style="color: black;" href="index.html">2</a></li>
+          <li class="page-item"><a class="page-link" style="color: black;" href="index.html">3</a></li>
         </ul>
       </nav>
   </div>
@@ -537,7 +536,127 @@
 
     </div>
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- modals -->
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+              Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus"></i>
+              Register</a>
+          </li>
+        </ul>
+
+        <!-- Tab panels -->
+        <div class="tab-content">
+          <!--Panel 7-->
+          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body ">
+              <div class="md-form form-sm mb-5">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate" placeholder="Enter Your Email">
+                <label data-error="wrong" data-success="right" for="modalLRInput10"></label>
+              </div>
+
+              <div class="md-form form-sm">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Enter Your Password">
+                <label data-error="wrong" data-success="right" for="modalLRInput11"></label>
+              </div>
+              <div class="text-center mt-2">
+                <button class="btn btn-info" id="btn123456">Log in <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-center text-md-right ">
+                <p>Not a member? <a style="color: #FCC821">Sign Up</a></p>
+                <p>Forgot <a style="color: #FCC821">Password?</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" id="btn123456" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+          <!--/.Panel 7-->
+
+          <!--Panel 8-->
+          <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body">
+              <div class="md-form form-sm">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate" placeholder="Your email">
+                <label data-error="wrong" data-success="right" for="modalLRInput12"></label>
+              </div>
+
+              <div class="md-form form-sm">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" placeholder="Your password">
+                <label data-error="wrong" data-success="right" for="modalLRInput13"></label>
+              </div>
+
+              <div class="md-form form-sm">
+                <i class="fas fa-lock prefix"></i>
+                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate" placeholder="Repeat password">
+                <label data-error="wrong" data-success="right" for="modalLRInput14"></label>
+              </div>
+
+              <div class="text-center form-sm ">
+                <button class="btn btn-info" id="btn123456">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+              </div>
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-right">
+                <p class="pt-1">Already have an account? <a style="color: #FCC821">Log In</a></p>
+              </div> 
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto" id="btn123456" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <!--/.Panel 8-->
+        </div>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+
+
+
+
 
 
     <!-- Optional JavaScript -->

@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+<!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Smart Store</title>
+  </head>
+  <body>
+
+
+
+
+
+    <!-- Header -->
+   
+
+
+
+
+
+      <div class="header navbar-collapse d-flex justify-content-between">
+        <div class="logo col-lg-6 col-sm-9 mr-auto">
+          <a class="navbar-brand" href="home.html"><img src="logo.png" style="width: 100%;"></a>
+          
+        </div>
+        <div class="sws col-lg-6 col-sm-3 d-lg-flex ">
+          <div class="">
+              <form  class="form-inline my-2 my-lg-0 d-lg-inline-block d-sm-none d-none">
+                   <input class="form-control mr-lg-2" id="a12" type="search" placeholder="Search" aria-label="Search">
+                   <button class="btn btn-info my-2 my-sm-0"id="a11" type="submit">Search</button>
+              </form></div> 
+              <div class="col-lg-2.5 ml-2 d-none d-lg-block">
+                    <button type="button" class="btn btn-info col-0 col-lg-12" id="a13" data-toggle="popover"  data-trigger="hover" title="Here your Wishlist is" >
+                     Wishlist <span class="badge badge-dark" id="a15">7</span>
+                    </button>  
+              </div>     
+              <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle  mx-2 mb-md-2 mb-sm-2 mb-xs-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         My account
+                         </button>
+                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" id="a14" href="#">Login</a>
+                        <a class="dropdown-item" id="a14" href="#">Register</a>
+                   </div>
+              </div>
+              <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle mb-md-2 mb-sm-2 mb-xs-2 mx-2 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Settings <i class="fa fa-gear fa-spin" style="font-size:20px"></i>
+                          </button>
+                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                         <a class="dropdown-item" id="a14" href="#">Account Settings</a>
+                         <a class="dropdown-item" id="a14" href="#">More Settings</a>
+                   </div> 
+        
+               </div>
+         </div>
+       </div>
+
+
+
+
+
+     <!--  Navbar -->
+
+
+
+
+       <nav class="navbar navbar-expand-lg navbar-light navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container1234" onclick="myFunction(this)">
+                   <div class="bar1"></div>
+                 <div class="bar2"></div>
+                 <div class="bar3"></div>
+                </div>
+
+            </button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav justify-content-center navigation">
+              <li class="nav-item col-lg-auto col-md-12 col-12 ml-0 mx-3" id="a16">
+                 <a class="nav-link active"  id="a17" href="index.html">Home</a>
+              </li>
+              <li class="nav-item col-lg-auto col-md-12 col-12 mr-auto  mx-3" id="a16">
+                 <a class="nav-link" id="a17" href="shop.html">Computers</a>
+              </li>
+              <li class="nav-item col-lg-auto col-md-12 col-12 ml-0" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >PC Components</a>
+             </li>
+             <li class="nav-item col-lg-auto col-md-12 col-12  mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >SmartPhones</a>
+             </li>
+             <li class="nav-item col-lg-auto col-md-12 col-12 mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >Tablets</a>
+             </li>
+             <li class="nav-item col-lg-auto col-md-12 col-12 mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >TVs</a>
+             </li>
+             <li class="nav-item col-lg-auto col-md-12 col-12 ml-auto  mx-3" id="a16">
+                  <a class="nav-link"  id="a17" href="#" >Contact Us</a>
+             </li>
+      </div>
+      </nav> 
+
+
+
+
+
+<!-- Container -->
+         <!-- breadcrumb -->
+ 
+ <nav aria-label="breadcrumb" class="row">
+        <ol class="breadcrumb  col mr-auto" style="background-color: black; border-radius: 0; padding-left: 3rem">
+            <li class="breadcrumb-item" style="color: white;">Computers</li>
+            <li class="breadcrumb-item" style="color: white;">Gaming Laptops</li>
+            <li class="breadcrumb-item active" aria-current="page" style="color: #FCC821;">Aspire 5 Laptop - A515-54-76TA</li>
+        </ol>
+    </nav>
+
+    <div class="row">
+      <div class="col-12 ml-3"><h2>Aspire 5 Laptop - A515-54-76TA</h2></div>
+    </div>
+    <div class="row">
+      <div class="col-md-1 col-12 ml-3">
+                        <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="single1.png"><img
+                                class="img-fluid" src="single1.png"/></a>
+                        <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="single.png"><img
+                                class="img-fluid" src="single.png"/></a>
+                        <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="single3.png"><img
+                                class="img-fluid" src="single3.png"/></a>
+                        <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="single4.png"><img
+                                class="img-fluid" src="single4.png"/></a>
+
+      </div>
+      <div class="col-md-5 col-12">
+         <a class="" data-fancybox-trigger="preview" href="single2.png"><img class="img-fluid" src="single2.png"/></a>
+
+      </div> 
+
+      <div class="col-md-auto col-12">
+                                <h3 class="font-weight-bold ">$750</h3>
+
+       <div class="row">
+       <div class="col-md-auto col-12">
+  
+                        <p class="font-weight-bold ml-2">Options</p>
+                    </div>
+                    <div class="col-12 ">
+                        <form action="">
+                            <div class="custom-control ml-2 custom-switch custom-control-inline">
+                                <input type="checkbox" id="mouse" name="customRadioInline1" class="custom-control-input ">
+                                <label class="custom-control-label" for="mouse">Mouse</label>
+                            </div>
+                            <div class="custom-control custom-switch custom-control-inline">
+                                <input type="checkbox" id="earphone" name="customRadioInline1" class="custom-control-input ml-2">
+                                <label class="custom-control-label" for="earphone">Earphones</label>
+                            </div>
+                            <div class="custom-control custom-switch  custom-control-inline">
+                                <input type="checkbox" class="custom-control-input ml-2" id="case" checked>
+                                <label class="custom-control-label" for="case">Case</label>
+                            </div>
+                        </form>
+
+                        <div class="col-12">
+                        <p class="font-weight-bold my-2 " >Color</p>
+                    </div>
+                    <div class="col-12">
+                         <form action="">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="black" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="black">Black</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="silver" name="customRadioInline1" class="custom-control-input"
+                                       checked>
+                                <label class="custom-control-label" for="silver">Silver</label>
+                            </div>
+                        </form>
+                        </div>
+                        <br><br>
+                       
+                    
+                        <form class="w-100 row" action="">
+                    <div class="col-12 col-md-5">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ml-2">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Quantity</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                   aria-describedby="inputGroup-sizing-sm" value="1">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <input class="btn btn-primary" id="btn123456" type="submit" value="Add To Cart">
+                    </div>
+                </form>
+                    </div>
+
+
+        </div>
+       </div>
+
+     
+
+</div>
+    </div>
+    <div class="row">
+      
+            <div class="accordion w-100" id="accordionExample">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item" id="headingOne">
+                        <a class="nav-link ml-3" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                           aria-controls="collapseOne">Overview</a>
+                    </li>
+                    <li class="nav-item" id="headingTwo">
+                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                           aria-controls="collapseTwo">Rating</a>
+                    </li>
+                    <li class="nav-item" id="headingThree">
+                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseThree"
+                           aria-expanded="false" aria-controls="collapseThree">Link</a>
+                    </li>
+                </ul>
+                <div class="card">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                         data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="font-weight-bold ml-3">Key Features</p>
+                            <ul>
+                                <li>Windows 10 Home</li>
+                                <li>Intel® Core™ i7-10510U processor Quad-core 1.80 GHz</li>
+                                <li>Intel® UHD Graphics shared memory</li>
+                                <li>15.6" Full HD (1920 x 1080) 16:9</li>
+                                <li>12 GB, DDR4 SDRAM</li>
+                                <li>512 GB SSD</li>
+                            </ul>
+                          <p class="ml-3"> Redefining What's Possible In A Thin And Light Computer
+Supercharge your laptop for work and play with an 10th Gen Intel® Core™ processor1 and NVIDIA® GeForce® MX250 GPU1.
+Apps load faster, graphics perform better and multitasking is more efficient with this powerful combination. Work more effectively with the Precision Touchpad and log in with a single, secure touch via Windows Hello using the embedded fingerprint reader1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <span class="w-25">Productivity</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">Performance</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">Durability</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                     style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">Battery Life</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">Shipping</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <p class="ml-3">  Wireless Convenience
+Maintain a strong, consistent wireless signal with Wi-Fi 5 (aka 802.11ac) and 2x2 MU-MIMO technology. The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.
+The Power of Sound and Voice
+Turn up the music with Acer TrueHarmony™, bringing you deeper bass and more volume through its innovative speaker design. Command your PC with hands-free ease and experience the freedom of voice control with Microsoft Cortana® and Amazon Alexa
+1 Specifications may vary depending on model and/or region.
+2 Listed battery life is based on testing with web browsing on model A515-54. Stated battery life is for comparison purposes only. Actual battery life varies by model, configuration, applications, video chip format and features used. A battery's maximum capacity decreases with time and use.
+3 Feature only available via specific Amazon devices and requires an Amazon account, the Amazon Alexa App, and an active internet connection. Not all voice commands are recognized. Amazon, Alexa, and all related logos and motion marks are trademarks of Amazon.com, Inc. or its affiliates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
+  <img src="single.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Acer</h5>
+    <p class="card-text">Wireless Convenience
+Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
+    <a href="#" class="btn btn-primary " id="btn123456">View More...</a>
+  </div>
+</div>
+ </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
+  <img src="single4.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Acer</h5>
+    <p class="card-text">Wireless Convenience
+Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
+    <a href="#" class="btn btn-primary " id="btn123456">View More...</a>
+  </div>
+</div>
+ </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
+  <img src="single2.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Acer</h5>
+    <p class="card-text">Wireless Convenience
+Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
+    <a href="#" class="btn btn-primary " id="btn123456">View More...</a>
+  </div>
+</div>
+ </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
+  <img src="single3.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Acer</h5>
+    <p class="card-text">Wireless Convenience
+Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
+    <a href="#" class="btn btn-primary " id="btn123456">View More...</a>
+  </div>
+</div>
+ </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
+  <img src="single4.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Acer</h5>
+    <p class="card-text">Wireless Convenience
+Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
+    <a href="#" class="btn btn-primary " id="btn123456">View More...</a>
+  </div>
+</div>
+ </div>
+
+
+
+    </div>
+
+
+
+
+<!-- Footer -->
+
+    <div class="footer">
+      <div class="row d-block lg-none">
+        <div class="col-12 d-block d-md-none px-0 mr-md-0 text-center">
+          <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5> Office</h5>
+            </div>
+          </div>
+          </div>
+      <div class="col-12 d-block d-md-none px-0 text-center">
+           <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Home</h5>
+            </div>
+          </div></div>
+          <div class="col-12 d-block d-md-none px-0 text-center">
+           <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Phones&More</h5>
+            </div>
+          </div></div>
+          <div class="col-12 d-block d-md-none px-0 text-center">
+           <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Gaming</h5>
+            </div>
+          </div></div>
+          <div class="col-12 d-block d-md-none px-0 text-center">
+           <div class="card">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Bestsellers</h5>
+            </div>
+          </div></div>
+          </div>
+        <div class="row row-cols-5">
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center" >
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body" style="background-color: black;">
+              <h5>Office</h5>
+
+              Computers <br>
+              Laptops <br>
+              Printers <br>
+              Network <br>
+            </div>
+          </div></div>
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center" >
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body" style="background-color: black;">
+              <h5>Home</h5>
+
+              Cinema <br>
+              Television <br>
+              Laundry <br>
+              Others <br>
+            </div>
+          </div></div>
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center" >
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Phone&More</h5>
+
+              Smartphones <br>
+              Classics <br>
+              Navigation <br>
+              Office Phones <br>
+            </div>
+          </div></div>
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center">
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body"  style="background-color: black;">
+              <h5>Gaming</h5>
+
+              Playstation <br>
+              Nintendo <br>
+              Xbox <br>
+              Consoles <br>
+            </div>
+          </div></div>
+          <div class="col-md-2.4 d-md-block d-none px-0 text-center">
+          <div class="card" style=" border-color:  #FCC821;">
+            <div class="card-body" style="background-color: black; ">
+              <h5>Bestsellers</h5>
+
+              IPad 2 <br>
+              Lenovo Y500 <br>
+              HTC One <br>
+              IMac Retina <br>
+            </div>
+          </div></div>
+
+          </div>
+          <div class="row " style="background-color: black; color: #FCC821;border-color:  #FCC821;">
+            <div class="col-12 d-md-block d-none">
+              <div class="abc col-6 mr-auto">
+                <h5 class="pl-10 my-3 ml-3">Find Us On:
+                <i class="fa fa-facebook-f ml-10 pl-10" style="font-size:24px;color:#FCC821;"></i>
+              <i class="fa fa-instagram" style="font-size:28px;color:#FCC821;"></i>
+              <i class="fa fa-twitter" style="font-size:28px;color:#FCC821;"></i>
+              <i class="fa fa-youtube" style="font-size:24px;color:#FCC821;"></i></h5>
+              </div>
+
+
+              <div class="abcd col-6 mt-3 ">
+                <h5 style="color:#FCC821; text-align:end; "><i class="fa fa-copyright" style="font-size:24px;color:#FCC821"></i>TUMO CENTER FOR CREATIVE TECHNOLOGIES</h5>
+              </div>
+
+            </div>
+              <div class="col-12 d-block d-md-none">
+                <h5 class="pl-10 my-3 ml-3 text-center" >Find Us On:
+                <i class="fa fa-facebook-f ml-10 pl-10" style="font-size:24px;color:#FCC821;"></i>
+              <i class="fa fa-instagram" style="font-size:28px;color:#FCC821;"></i>
+              <i class="fa fa-twitter" style="font-size:28px;color:#FCC821;"></i>
+              <i class="fa fa-youtube" style="font-size:24px;color:#FCC821;"></i><br>
+              <i class="fa fa-copyright" style="font-size:24px;color:#FCC821"></i>TUMO CENTER FOR CREATIVE TECHNOLOGIES</h5>
+              </div>
+            
+          </div>
+
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+      <script src="jquery.fancybox.min.js"> 
+         $('[data-fancybox="preview"]').fancybox({
+  thumbs : {
+    autoStart : true
+  }
+});
+</script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+      $('.popover-dismiss').popover({
+  trigger: 'hover'
+})
+
+    </script>
+    
+  </body>
+</html>

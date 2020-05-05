@@ -1,3 +1,4 @@
+/*home*/
 .header{
 	background-color: black;
 }
@@ -80,7 +81,7 @@
   background-color: black;
   color: #FCC821;
 }
-p,h1,h2,h3,h4,h5,h6, .btn, a, .btn1234 {
+a,p,h1,h2,h3,h4,h5,h6, .btn, a, .btn1234 {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 .bc{
@@ -109,4 +110,41 @@ p,h1,h2,h3,h4,h5,h6, .btn, a, .btn1234 {
 }
 .abc, .abcd{
 	float: left;
+}
+/*shop*/
+#sortby{
+	color: #FCC821;
+	background-color: black;
+}
+#sortby:hover{
+	color: black;
+	background-color: #FCC821;
+}
+#b1:hover{
+
+	color: black;
+	background-color: #FCC821;
+
+}
+#b1:focus{
+	color: black;
+	background-color: #FCC821;
+}
+#b1:active{
+	color: black;
+	background-color:#FCC821 ;
+}
+a.text-primary:focus, a.text-primary:hover{
+	color: #FCC821;
+}
+#btn123456{
+	 background-color:  #FCC821;
+	 color:black;
+	 border:none;
+}
+#btn123456:hover{
+
+	color: #FCC821;
+	background-color: black;
+
 }
