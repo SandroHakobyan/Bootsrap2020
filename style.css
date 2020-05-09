@@ -148,3 +148,24 @@ a.text-primary:focus, a.text-primary:hover{
 	background-color: black;
 
 }
+#m1{
+	color:#495057 ;
+}
+#m1:hover{
+color: #FCC821;
+}
+#m1:active{
+	color: #495057;
+}
+a.nav-link{
+	color: #FCC821;
+	background-color: black;
+}
+a.nav-link:hover{
+	color: black;
+	background-color: #FCC821;
+}
+ul.nav.nav-tabs{
+	background-color: black;
+	border-radius: 0px;
+}
