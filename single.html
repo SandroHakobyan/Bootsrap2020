@@ -29,14 +29,14 @@
 
       <div class="header navbar-collapse d-flex justify-content-between">
         <div class="logo col-lg-6 col-sm-9 mr-auto">
-          <a class="navbar-brand" href="home.html"><img src="logo.png" style="width: 100%;"></a>
+          <a class="navbar-brand" href="home.html"><img src="img/logo.png" style="width: 100%;"></a>
           
         </div>
         <div class="sws col-lg-6 col-sm-3 d-lg-flex ">
           <div class="">
               <form  class="form-inline my-2 my-lg-0 d-lg-inline-block d-sm-none d-none">
                    <input class="form-control mr-lg-2" id="a12" type="search" placeholder="Search" aria-label="Search">
-                   <button class="btn btn-info my-2 my-sm-0"id="a11" type="submit">Search</button>
+                   <button class="btn btn-info my-2 my-sm-0" id="a11" type="submit">Search</button>
               </form></div> 
               <div class="col-lg-2.5 ml-2 d-none d-lg-block">
                     <button type="button" class="btn btn-info col-0 col-lg-12" id="a13" data-toggle="popover"  data-trigger="hover" title="Here your Wishlist is" >
@@ -131,17 +131,17 @@
     <div class="row">
       <div class="col-md-1 col-12 ml-3">
                         <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="single1.png"><img
-                                class="img-fluid" src="single1.png"/></a>
+                                class="img-fluid" src="img/single1.png"/></a>
                         <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="single.png"><img
-                                class="img-fluid" src="single.png"/></a>
+                                class="img-fluid" src="img/single.png"/></a>
                         <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="single3.png"><img
-                                class="img-fluid" src="single3.png"/></a>
+                                class="img-fluid" src="img/single3.png"/></a>
                         <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="single4.png"><img
-                                class="img-fluid" src="single4.png"/></a>
+                                class="img-fluid" src="img/single4.png"/></a>
 
       </div>
       <div class="col-md-5 col-12">
-         <a class="" data-fancybox-trigger="preview" href="single2.png"><img class="img-fluid" src="single2.png"/></a>
+         <a class="" data-fancybox-trigger="preview" href="single2.png"><img class="img-fluid" src="img/single2.png"/></a>
 
       </div> 
 
@@ -199,7 +199,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <input class="btn btn-primary" id="btn123456" type="submit" value="Add To Cart">
+                        <button class="btn btn-primary" id="btn123456" data-toggle="modal" data-target="#staticBackdrop123">Add To Cart</button>
                     </div>
                 </form>
                     </div>
@@ -299,7 +299,7 @@ Turn up the music with Acer TrueHarmony™, bringing you deeper bass and more vo
     </div>
     <div class="row justify-content-center">
       <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
-  <img src="single.png" class="card-img-top" alt="...">
+  <img src="img/single.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Acer</h5>
     <p class="card-text">Wireless Convenience
@@ -309,7 +309,7 @@ Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot ant
 </div>
  </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
-  <img src="single4.png" class="card-img-top" alt="...">
+  <img src="img/single4.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Acer</h5>
     <p class="card-text">Wireless Convenience
@@ -319,7 +319,7 @@ Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot ant
 </div>
  </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
-  <img src="single2.png" class="card-img-top" alt="...">
+  <img src="img/single2.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Acer</h5>
     <p class="card-text">Wireless Convenience
@@ -329,7 +329,7 @@ Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot ant
 </div>
  </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
-  <img src="single3.png" class="card-img-top" alt="...">
+  <img src="img/single3.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Acer</h5>
     <p class="card-text">Wireless Convenience
@@ -339,7 +339,7 @@ Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot ant
 </div>
  </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
-  <img src="single4.png" class="card-img-top" alt="...">
+  <img src="img/single4.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Acer</h5>
     <p class="card-text">Wireless Convenience
@@ -483,8 +483,33 @@ Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot ant
 
     <!-- modals -->
 
-
-
+<!-- Buy Modal -->
+<div class="modal fade" id="staticBackdrop123" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6">
+            <img src="img/single2.png">
+          </div>
+          <div class="col-6">
+            <p>This Item Successfully added to your cart</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="checkout.html"><button type="button" class="btn btn-primary" id="button12345">Buy Now</button></a>
+      </div>
+    </div>
+  </div>
+</div>
 
    
   <!-- Modal -->

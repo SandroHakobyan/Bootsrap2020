@@ -169,3 +169,99 @@ ul.nav.nav-tabs{
 	background-color: black;
 	border-radius: 0px;
 }
+label.custom-control-label::after{
+	background-color: #FCC821;
+	color: black !important;
+}
+label.custom-control-label::before{
+	
+	color:  #FCC821;
+}
+.custom-control-input:checked~.custom-control-label::before {
+	background-color: #FCC821 !important;
+	border-color:  #FCC821 !important;
+	color: white;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #fcc821;
+    background-color: #fcc821;
+}
+#regForm {
+  background-color: #ffffff;
+  margin: 60px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+  border-radius: 2%;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  background-color:  #FCC821 ;
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color:  #FCC821 ;
+}
+button{
+	
+  background-color:  #FCC821;
+  border: none;
+  color:black;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius: 50%;
+
+}
+span.price {
+  float: right;
+  color: grey;
+}
+
+
+

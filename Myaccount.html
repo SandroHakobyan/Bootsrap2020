@@ -15,7 +15,7 @@
     <!-- Header -->
      <div class="header navbar-collapse d-flex justify-content-center">
         <div class="logo col-lg-6 col-sm-9 mr-auto">
-          <a class="navbar-brand" href="home.html"><img src="logo.png" style="width: 100%;"></a>
+          <a class="navbar-brand" href="home.html"><img src="img/logo.png" style="width: 100%;"></a>
           
         </div>
         <div class="sws col-lg-6 col-sm-3 d-lg-flex ">
@@ -96,7 +96,7 @@
 
 <!-- Container -->
 
-<div class="row d-none d-md-block">
+<div class="row "><!-- d-none d-md-block -->
   
   <div class="col-md-12">
     
@@ -123,41 +123,28 @@
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                          data-parent="#accordionExample">
                         <div class="card-body">
-                            
-
-
-
-
-                          <h5>Personal Info</h5> <hr>
-
-
-
-
-                          <form>
-                              <div class="form-group row col-md-6">
-                                <label for="staticEmail" class="col-md-1 col-lg-2 col-form-label">Email:</label>
-                               
-                                  <input type="text" readonly class="form-control-plaintext col-md-3 col-lg-4" id="staticEmail" value="sandro.hakobyan.y@tumo.org">
-                                 <label for="staticPassword" class="mb-0  my-auto pl-3 mr-2">Password </label>
-                                  <input type="text" class="form-control-pleintext" id="staticPassword" placeholder="" value="•••••••••••••">
-                              </div>
-                                <div class="form-group col-md-6">
-                                 
-                                </div>
-                              </div>
-                              <div class="form-group row col-md-6">
-                                <label for="staticAddress" class="ml-4 mr-2 my-auto">Address 1</label>
+                            <h5>Personal Info</h5> <hr>
+                              <form>
+                                  <div class="form-group row col-lg-12 col-12">
+                                    <label for="staticEmail" class="col-md-4 col-lg-2 col-3 col-form-label">Email:</label>
+                                   
+                                      <input type="text" readonly class="form-control-plaintext col-md-7 col-9 col-lg-4" id="staticEmail" value="sandro.hakobyan.y@tumo.org">
+                                     <label for="staticPassword" class="mb-0  my-auto pl-3 mr-2">Password </label>
+                                      <input type="text" class="form-control-pleintext" id="staticPassword" placeholder="" value="•••••••••••••">
+                                  </div>
+                              <div class="form-group row col-lg-12 col-md-12 col-12">
+                                <label for="staticAddress" class="ml-lg-4 ml-3 mr-2 my-auto">Address 1</label>
                                 <input type="text" class="form-control-pleintext" id="staticAddress" placeholder="Galsholyan 48/23">
                               
-                                <label for="staticAddress2" class="ml-5 mr-2 pl-3 my-auto" >Address 2</label>
+                                <label for="staticAddress2" class="ml-lg-5 ml-sm-2 mt-2  mr-2 pl-3 my-auto" >Address 2</label>
                                 <input type="text" class="form-control-pleintext" id="staticAddress2" placeholder="Banavan 5 building" >
                               </div>
-                              <div class="form-row col-md-6" >
-                                <div class="form-group col-md-2">
+                              <div class="form-row col-md-12 col-12 col-lg-12" >
+                                <div class="form-group col-md-4 col-lg-5 col-5">
                                   <label for="inputCity">City</label>
                                   <input type="text" class="form-control" id="staticCity" value="Yerevan">
                                 </div>
-                                <div class="form-group col-md-3">
+                                <div class="form-group col-lg-4 col-md-6 col-4">
                                   <label for="inputState">State</label>
                                   <select id="inputState" class="form-control">
                                     <option selected>Choose...</option>
@@ -165,30 +152,17 @@
                                     <option>Jrvejh</option>
                                   </select>
                                 </div>
-                                <div class="form-group col-md-2">
+                                <div class="form-group col-lg-3 col-md-4 col-3">
                                   <label for="inputZip">Zip</label>
                                   <input type="text" class="form-control" id="staticZip" value="0079">
                                 </div>
                               </div>
                               
                             </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                          </div>
                         </div>
                     </div>
-                </div>
+                
                 <div class="card">
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
@@ -197,7 +171,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+
                 <div class="card">
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                         <div class="card-body">
@@ -214,7 +188,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="inputAddress">Address</label>
+    <label for="inputAddress">Address 1</label>
     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
   </div>
   <div class="form-group">
@@ -254,29 +228,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div class="col-md-12 px-0">
     
 
 
-<div class="accordion w-100" id="accordionExample">
+<div class="accordion w-100" id="accordionExample2">
                 <ul class="nav nav-tabs">
                     <li class="nav-item" id="headingFour">
                         <a class="nav-link ml-3" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
@@ -291,86 +247,105 @@
                            aria-expanded="false" aria-controls="collapseSix">In Transit</a>
                     </li>
                 </ul>
+                <!-- card -->
                 <div class="card">
+                  <!-- colapse show -->
                     <div id="collapseFour" class="collapse show" aria-labelledby="headingFour"
-                         data-parent="#accordionExample">
+                         data-parent="#accordionExample2">
+                         <!-- card body -->
                         <div class="card-body">
                             <h5>Last Viewed</h5> <hr>
 
 
-
+                            <!-- row -->
                             <div class="row justify-content-between">
-                              <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
-                          <img src="single.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Acer</h5>
-                            <p class="card-text">Wireless Convenience
-                        Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
-                            <a href="#" class="btn btn-primary " id="btn123456">View More...</a>
-                          </div>
-                        </div>
-                         </div>
-                              <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
-                          <img src="single4.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Acer</h5>
-                            <p class="card-text">Wireless Convenience
-                        Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
-                            <a href="#" class="btn btn-primary " id="btn123456">View More...</a>
-                          </div>
-                        </div>
-                         </div>
-                              <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
-                          <img src="single2.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Acer</h5>
-                            <p class="card-text">Wireless Convenience
-                        Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
-                            <a href="#" class="btn btn-primary " id="btn123456">View More...</a>
-                          </div>
-                        </div>
-                         </div>
-                              <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
-                          <img src="single3.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Acer</h5>
-                            <p class="card-text">Wireless Convenience
-                        Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
-                            <a href="#" class="btn btn-primary " id="btn123456">View More...</a>
-                          </div>
-                        </div>
-                         </div>
-                              <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
-                          <img src="single4.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Acer</h5>
-                            <p class="card-text">Wireless Convenience
-                        Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
-                            <a href="#" class="btn btn-primary " id="btn123456">View More...</a>
-                          </div>
-                        </div>
-                         </div>
+                              <!-- col-12 -->
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                               <div class="card" style="width: 18rem;"> 
+                                  <img src="img/single.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Acer</h5>
+                                    <p class="card-text">Wireless Convenience
+                                Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
+                                    <a href="single.html" class="btn btn-primary " id="btn123456">View More...</a>
+                                  </div>
+                                </div>
+                                 </div>
+                                 <!-- /col-12 -->
 
-
-
-
-
-
-
-
-
-
-
-                        </div>
+                                 <!-- col-12 -->
+                                      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                       <div class="card" style="width: 18rem;"> 
+                                  <img src="img/single4.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Acer</h5>
+                                    <p class="card-text">Wireless Convenience
+                                Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
+                                    <a href="single.html" class="btn btn-primary " id="btn123456">View More...</a>
+                                  </div>
+                                </div>
+                                 </div>
+                                 <!-- /col-12 -->
+                                  <!-- col-12 -->
+                                      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                       <div class="card" style="width: 18rem;"> 
+                                  <img src="img/single2.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Acer</h5>
+                                    <p class="card-text">Wireless Convenience
+                                Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
+                                    <a href="single.html" class="btn btn-primary " id="btn123456">View More...</a>
+                                  </div>
+                                </div>
+                                 </div>
+                                  <!-- /col-12 -->
+                                   <!-- col-12 -->
+                                      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                       <div class="card" style="width: 18rem;"> 
+                                  <img src="img/single3.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Acer</h5>
+                                    <p class="card-text">Wireless Convenience
+                                Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
+                                    <a href="single.html" class="btn btn-primary " id="btn123456">View More...</a>
+                                  </div>
+                                </div>
+                                 </div>
+                                  <!-- /col-12 -->
+                                   <!-- col-12 -->
+                                      <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                       <div class="card" style="width: 18rem;"> 
+                                  <img src="img/single4.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Acer</h5>
+                                    <p class="card-text">Wireless Convenience
+                                Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot antenna placement helps maximize the portability and wireless performance of your laptop.</p>
+                                    <a href="single.html" class="btn btn-primary " id="btn123456">View More...</a>
+                                  </div>
+                              </div>
+                            </div>
+                             <!-- /col-12 -->
                     </div>
+                     <!-- /row -->
                 </div>
+                <!-- /card body -->
+              </div>
+              <!-- /colapse show -->
+            </div>
+            <!-- /card -->
+            <!-- card -->
                 <div class="card">
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <!-- colapse show -->
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample2">
+                      <!-- card-body -->
                         <div class="card-body">
                           <h5>Saved</h5> <hr>
+                          <!-- row -->
                           <div class="row justify-content-start">
-                              <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2"> <div class="card" style="width: 18rem;"> 
-                          <img src="single.png" class="card-img-top" alt="...">
+                            <!-- col-12 -->
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2">
+                               <div class="card" style="width: 18rem;"> 
+                          <img src="img/single.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Acer</h5>
                             <p class="card-text">Wireless Convenience
@@ -379,8 +354,11 @@
                           </div>
                         </div>
                          </div>
-                              <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2"> <div class="card" style="width: 18rem;"> 
-                          <img src="single4.png" class="card-img-top" alt="...">
+                         <!-- /col-12 -->
+                         <!-- col-12 -->
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2">
+                               <div class="card" style="width: 18rem;"> 
+                          <img src="img/single4.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Acer</h5>
                             <p class="card-text">Wireless Convenience
@@ -389,20 +367,30 @@
                           </div>
                         </div>
                          </div>
+                         <!-- /col-12 -->
                        </div>
+                       <!-- /row -->
                             </div>
+                            <!-- /card-body -->
                         </div>
+                        <!-- /colapse show -->
                     </div>
-                </div>
+                    <!-- /card -->
+                
 
-
+                    <!--card  -->
                 <div class="card">
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                  <!-- colapse show -->
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample2">
+                      <!-- card-body -->
                         <div class="card-body">
                           <h5>In Transit</h5> <hr>
+                          <!-- row -->
                           <div class="row justify-content-start">
-                              <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2"> <div class="card" style="width: 18rem;"> 
-                          <img src="single.png" class="card-img-top" alt="...">
+                            <!-- col-12 -->
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2">
+                               <div class="card" style="width: 18rem;"> 
+                          <img src="img/single.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Acer</h5>
                             <p class="card-text">Wireless Convenience
@@ -411,8 +399,11 @@
                           </div>
                         </div>
                          </div>
-                              <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2"> <div class="card" style="width: 18rem;"> 
-                          <img src="single4.png" class="card-img-top" alt="...">
+                         <!-- /col-12 -->
+                         <!-- col-12 -->
+                              <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2">
+                               <div class="card" style="width: 18rem;"> 
+                          <img src="img/single4.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Acer</h5>
                             <p class="card-text">Wireless Convenience
@@ -421,8 +412,11 @@
                           </div>
                         </div>
                          </div>
-                           <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2"> <div class="card" style="width: 18rem;"> 
-                          <img src="single.png" class="card-img-top" alt="...">
+                         <!-- /col-12 -->
+                         <!-- col-12 -->
+                           <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2">
+                            <div class="card" style="width: 18rem;"> 
+                          <img src="img/single.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Acer</h5>
                             <p class="card-text">Wireless Convenience
@@ -431,40 +425,31 @@
                           </div>
                         </div>
                          </div>
+                         <!-- /col-12 -->
+                         <!-- col-12 -->
                        </div>
+                       <!-- row -->
+
                         </div>
+                        <!-- card-body -->
                     </div>
+                    <!-- colapse show -->
                 </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <!--card  -->
+    </div>
   </div>
-
-
-  </div>
-
+</div>
 
 
 </div>
 
 
 
+
+
 <!-- Footer -->
 
-    <div class="footer">
+    <div class="footer ">
       <div class="row d-block lg-none">
         <div class="col-12 d-block d-md-none px-0 mr-md-0 text-center">
           <div class="card">
