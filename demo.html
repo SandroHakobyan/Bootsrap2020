@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <title>Counter: jQuery Number Spinner Plugin Demos</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <style>
+        body{
+            font-family: 'Roboto Condensed';
+            padding: 0;
+            margin: 0;
+            background-color: #eee;
+        }
+
+        h4{
+            color: steelblue;
+        }
+        .counter {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .c1-btn,.c2-btn {
+            width: 100px;
+            height: 32px;
+            background-color: orange;
+            color: white;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .c1-btn:hover,.c2-btn:hover{
+            background-color: #db8e00;
+        }
+
+        .c1-p,.c2-p {
+            color: gray;
+            font-size: 16px;
+        }
+
+        .c1-span,.c2-span {
+            color: green;
+        }
+        .container{
+            margin: 150px auto;
+            max-width: 960px;
+
+        }
+    </style>
+</head>
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/form/spin-numbers-plus-minus-buttons.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+    <div class="container">
+        <h1>Counter: jQuery Number Spinner Plugin Demos</h1>
+        <div class="counter1-container">
+            <h4>Number Input Spinner Without Attributes</h4>
+            <div id="counter-one" class="counter"></div>
+            <button class="c1-btn" onclick="onC1BtnClick()">Get Value</button>
+        </div>
+        <br/>
+        <hr>
+        <br/>
+        <div class="counter2-container">
+            <h4>Number Input Spinner With Attributes - [min="5"] [max="10"] [step="0.5"]</h4>
+            <div id="counter-two" class="counter" min="5" max="10" step="0.5"></div>
+            <button class="c2-btn" onclick="onC2BtnClick()">Get Value</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="plugin.js"></script>
+    <script type="text/javascript">
+
+        /*Start Number Input Spinner Without Attributes*/
+
+        $("#counter-one").htmlNumberSpinner();
+        $('.counter1-container').append("<p class='c1-p'>The Spinner Value is : <span class='c1-span'>-</span></p>");
+
+        function onC1BtnClick() {
+            var value = $("#counter-one").getSpinnerValue();
+            $('.c1-p .c1-span').text(value);
+        }
+
+        /* End Number Input Spinner Without Attributes*/
+
+
+        /*Start Number Input Spinner With Attributes*/
+
+        $("#counter-two").htmlNumberSpinner();
+        $('.counter2-container').append("<p class='c2-p'>The Spinner Value is : <span class='c2-span'>-</span></p>");
+
+        function onC2BtnClick() {
+            var value = $("#counter-two").getSpinnerValue();
+            $('.c2-p .c2-span').text(value);
+        }
+
+        /*End Number Input Spinner With Attributes*/
+    </script>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

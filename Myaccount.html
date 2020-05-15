@@ -13,24 +13,27 @@
   </head>
   <body>
     <!-- Header -->
-     <div class="header navbar-collapse d-flex justify-content-center">
-        <div class="logo col-lg-6 col-sm-9 mr-auto">
+
+ <div class="header navbar-collapse d-flex justify-content-center">
+        
+        <div class="logo col-lg-5 col-sm-8  my-auto">
           <a class="navbar-brand" href="home.html"><img src="img/logo.png" style="width: 100%;"></a>
           
         </div>
-        <div class="sws col-lg-6 col-sm-3 d-lg-flex ">
-          <div class="">
-              <form  class="form-inline my-2 my-lg-0 d-lg-inline-block d-sm-none d-none">
-                   <input class="form-control mr-lg-2" id="a12" type="search" placeholder="Search" aria-label="Search">
+        <div class="row">
+        <div class="sws col-lg-6 col-sm d-lg-flex mr-1 ">
+          <div class="row">
+              <form  class="form-inline my-2 my-lg-0 d-lg-inline-block  d-none">
+                   <input class="form-control mr-lg-2 col-md-6" id="a12" type="search" placeholder="Search" aria-label="Search">
                    <button class="btn btn-info my-2 my-sm-0"id="a11" type="submit">Search</button>
               </form></div> 
-              <div class="col-lg-2.5 ml-2 d-none d-lg-block">
-                    <button type="button" class="btn btn-info col-0 col-lg-12" id="a13" data-toggle="popover"  data-trigger="hover" title="Here your Wishlist is" >
-                     Wishlist <span class="badge badge-dark" id="a15">7</span>
-                    </button>  
+              <div class="col-lg-4 col-sm-10 col-md-10 col-10 px-0 ml-2 mr-2 d-block ">
+                   <a href="wishlist.html"> <button type="button" class="btn btn-info w-100" id="a13" data-toggle="popover"  data-trigger="hover" title="Here your Wishlist is" >
+                     Wish<span class="badge badge-dark" id="a15">7</span>
+                    </button>  </a>
               </div>     
               <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle  mx-2 mb-md-2 mb-sm-2 mb-xs-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle  mx-2 mb-md-2 mb-sm-2 mb-xs-2" type="button" id="dropdownMenuButton a13" data-toggle="dropdown" style="margin-bottom: 5%;" aria-haspopup="true" aria-expanded="false">
                          My account
                          </button>
                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -39,8 +42,8 @@
                         <a class="dropdown-item" id="a14" data-toggle="modal"  data-target="#myaccount" href="Myaccount.html">My Account</a>
                    </div>
               </div>
-              <div class="dropdown">
-                          <button class="btn btn-secondary dropdown-toggle mb-md-2 mb-sm-2 mb-xs-2 mx-2 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="dropdown ">
+                          <button class="btn btn-secondary dropdown-toggle mb-md-2 mb-sm-2 mb-xs-2 mx-2 " type="button" id="dropdownMenuButton a13" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                            Settings <i class="fa fa-gear fa-spin" style="font-size:20px"></i>
                           </button>
                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -51,9 +54,19 @@
         
                </div>
          </div>
+         </div>
        </div>
-       <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light navigation">
+
+
+
+
+     <!--  Navbar -->
+
+
+
+
+       
+       <nav class="navbar navbar-expand-lg navbar-light navigation">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="container1234" onclick="myFunction(this)">
                    <div class="bar1"></div>
@@ -66,12 +79,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav justify-content-center navigation">
               <li class="nav-item col-lg-auto col-md-12 col-12 ml-0 mx-3" id="a16">
-                 <a class="nav-link active"  id="a17" href="index.html">Home</a>
+                 <a class="nav-link "  id="a17" href="index.html">Home</a>
               </li>
-              <li class="nav-item col-lg-auto col-md-12 col-12 mr-auto  mx-3" id="a16">
+              <li class="nav-item col-lg-auto col-md-12 col-12  mx-3" id="a16">
                  <a class="nav-link" id="a17" href="shop.html">Computers</a>
               </li>
-              <li class="nav-item col-lg-auto col-md-12 col-12 ml-0" id="a16">
+              <li class="nav-item col-lg-auto col-md-12 col-12 ml-0 d-block d-md-none d-xl-block" id="a16">
                   <a class="nav-link"  id="a17" href="#" >PC Components</a>
              </li>
              <li class="nav-item col-lg-auto col-md-12 col-12  mx-3" id="a16">
@@ -80,14 +93,15 @@
              <li class="nav-item col-lg-auto col-md-12 col-12 mx-3" id="a16">
                   <a class="nav-link"  id="a17" href="#" >Tablets</a>
              </li>
-             <li class="nav-item col-lg-auto col-md-12 col-12 mx-3" id="a16">
+             <li class="nav-item col-lg-auto col-md-12 col-12 mx-3 d-block d-md-none d-xl-block" id="a16">
                   <a class="nav-link"  id="a17" href="#" >TVs</a>
              </li>
-             <li class="nav-item col-lg-auto col-md-12 col-12 ml-auto  mx-3" id="a16">
+             <li class="nav-item col-lg-auto col-md-12 col-12 ml-auto d-block d-md-none d-xl-block  mx-3" id="a16">
                   <a class="nav-link"  id="a17" href="#" >Contact Us</a>
              </li>
       </div>
       </nav> 
+
 
 
 
@@ -104,7 +118,7 @@
 
 
 
-<div class="accordion w-100" id="accordionExample">
+<div class="accordion " id="accordionExample">
                 <ul class="nav nav-tabs">
                     <li class="nav-item" id="headingOne">
                         <a class="nav-link ml-3" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
@@ -112,11 +126,11 @@
                     </li>
                     <li class="nav-item" id="headingTwo">
                         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                           aria-controls="collapseTwo"> Messages</a>
+                           aria-controls="collapseTwo">Messages</a>
                     </li>
                     <li class="nav-item" id="headingThree">
                         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseThree"
-                           aria-expanded="false" aria-controls="collapseThree">+Add info</a>
+                           aria-expanded="false" aria-controls="collapseThree">Add info</a>
                     </li>
                 </ul>
                 <div class="card">
@@ -125,19 +139,24 @@
                         <div class="card-body">
                             <h5>Personal Info</h5> <hr>
                               <form>
-                                  <div class="form-group row col-lg-12 col-12">
+                                  <div class="form-group row ">
+                                    <div class="col-lg-12 col-12">
+                                      <div class="row d-md-flex align-items-center">
                                     <label for="staticEmail" class="col-md-4 col-lg-2 col-3 col-form-label">Email:</label>
                                    
                                       <input type="text" readonly class="form-control-plaintext col-md-7 col-9 col-lg-4" id="staticEmail" value="sandro.hakobyan.y@tumo.org">
-                                     <label for="staticPassword" class="mb-0  my-auto pl-3 mr-2">Password </label>
-                                      <input type="text" class="form-control-pleintext" id="staticPassword" placeholder="" value="•••••••••••••">
+                                     <label for="staticPassword" class="mb-0  pl-3 mr-2 ">Password </label>
+                                      <input type="text" readonly class="form-control-pleintext col-md-7 col-9 col-lg-4" id="staticPassword" value="•••••••••••••">
                                   </div>
-                              <div class="form-group row col-lg-12 col-md-12 col-12">
+                                </div>
+                                </div>
+                              <div class="form-group row">
+                                <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                                 <label for="staticAddress" class="ml-lg-4 ml-3 mr-2 my-auto">Address 1</label>
-                                <input type="text" class="form-control-pleintext" id="staticAddress" placeholder="Galsholyan 48/23">
-                              
+                                <input type="text" class="form-control-pleintext col-md-7 col-9 col-lg-4" readonly id="staticAddress" value="Galsholyan 48/23"></div>
+                              <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                                 <label for="staticAddress2" class="ml-lg-5 ml-sm-2 mt-2  mr-2 pl-3 my-auto" >Address 2</label>
-                                <input type="text" class="form-control-pleintext" id="staticAddress2" placeholder="Banavan 5 building" >
+                                <input type="text" class="form-control-pleintext col-md-7 col-9 col-lg-4" readonly id="staticAddress2" value="Banavan 5 building" ></div>
                               </div>
                               <div class="form-row col-md-12 col-12 col-lg-12" >
                                 <div class="form-group col-md-4 col-lg-5 col-5">
@@ -261,7 +280,7 @@
                             <div class="row justify-content-between">
                               <!-- col-12 -->
                               <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                               <div class="card" style="width: 18rem;"> 
+                               <div class="card" > 
                                   <img src="img/single.png" class="card-img-top" alt="...">
                                   <div class="card-body">
                                     <h5 class="card-title">Acer</h5>
@@ -275,7 +294,7 @@
 
                                  <!-- col-12 -->
                                       <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                       <div class="card" style="width: 18rem;"> 
+                                       <div class="card" > 
                                   <img src="img/single4.png" class="card-img-top" alt="...">
                                   <div class="card-body">
                                     <h5 class="card-title">Acer</h5>
@@ -288,7 +307,7 @@
                                  <!-- /col-12 -->
                                   <!-- col-12 -->
                                       <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                       <div class="card" style="width: 18rem;"> 
+                                       <div class="card" > 
                                   <img src="img/single2.png" class="card-img-top" alt="...">
                                   <div class="card-body">
                                     <h5 class="card-title">Acer</h5>
@@ -301,7 +320,7 @@
                                   <!-- /col-12 -->
                                    <!-- col-12 -->
                                       <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                       <div class="card" style="width: 18rem;"> 
+                                       <div class="card" > 
                                   <img src="img/single3.png" class="card-img-top" alt="...">
                                   <div class="card-body">
                                     <h5 class="card-title">Acer</h5>
@@ -314,7 +333,7 @@
                                   <!-- /col-12 -->
                                    <!-- col-12 -->
                                       <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                       <div class="card" style="width: 18rem;"> 
+                                       <div class="card"> 
                                   <img src="img/single4.png" class="card-img-top" alt="...">
                                   <div class="card-body">
                                     <h5 class="card-title">Acer</h5>
@@ -344,7 +363,7 @@
                           <div class="row justify-content-start">
                             <!-- col-12 -->
                               <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2">
-                               <div class="card" style="width: 18rem;"> 
+                               <div class="card"> 
                           <img src="img/single.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Acer</h5>
@@ -357,7 +376,7 @@
                          <!-- /col-12 -->
                          <!-- col-12 -->
                               <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2">
-                               <div class="card" style="width: 18rem;"> 
+                               <div class="card" > 
                           <img src="img/single4.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Acer</h5>
@@ -389,7 +408,7 @@
                           <div class="row justify-content-start">
                             <!-- col-12 -->
                               <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2">
-                               <div class="card" style="width: 18rem;"> 
+                               <div class="card" > 
                           <img src="img/single.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Acer</h5>
@@ -402,7 +421,7 @@
                          <!-- /col-12 -->
                          <!-- col-12 -->
                               <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2">
-                               <div class="card" style="width: 18rem;"> 
+                               <div class="card" > 
                           <img src="img/single4.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Acer</h5>
@@ -415,7 +434,7 @@
                          <!-- /col-12 -->
                          <!-- col-12 -->
                            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-2">
-                            <div class="card" style="width: 18rem;"> 
+                            <div class="card" > 
                           <img src="img/single.png" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Acer</h5>

@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 <!-- Fancybox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
-
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -26,46 +25,48 @@
 
 
 
-
-      <div class="header navbar-collapse d-flex justify-content-between">
-        <div class="logo col-lg-6 col-sm-9 mr-auto">
+ <div class="header navbar-collapse d-flex justify-content-center">
+        
+        <div class="logo col-lg-5 col-sm-8  my-auto">
           <a class="navbar-brand" href="home.html"><img src="img/logo.png" style="width: 100%;"></a>
           
         </div>
-        <div class="sws col-lg-6 col-sm-3 d-lg-flex ">
-          <div class="">
-              <form  class="form-inline my-2 my-lg-0 d-lg-inline-block d-sm-none d-none">
-                   <input class="form-control mr-lg-2" id="a12" type="search" placeholder="Search" aria-label="Search">
-                   <button class="btn btn-info my-2 my-sm-0" id="a11" type="submit">Search</button>
+        <div class="row">
+        <div class="sws col-lg-6 col-sm d-lg-flex mr-1 ">
+          <div class="row">
+              <form  class="form-inline my-2 my-lg-0 d-lg-inline-block  d-none">
+                   <input class="form-control mr-lg-2 col-md-6" id="a12" type="search" placeholder="Search" aria-label="Search">
+                   <button class="btn btn-info my-2 my-sm-0"id="a11" type="submit">Search</button>
               </form></div> 
-              <div class="col-lg-2.5 ml-2 d-none d-lg-block">
-                    <button type="button" class="btn btn-info col-0 col-lg-12" id="a13" data-toggle="popover"  data-trigger="hover" title="Here your Wishlist is" >
-                     Wishlist <span class="badge badge-dark" id="a15">7</span>
-                    </button>  
+              <div class="col-lg-4 col-sm-10 col-md-10 col-10 px-0 ml-2 mr-2 d-block ">
+                    <a href="wishlist.html"><button type="button" class="btn btn-info w-100" id="a13" data-toggle="popover"  data-trigger="hover" title="Here your Wishlist is" >
+                     Wish<span class="badge badge-dark" id="a15">7</span>
+                    </button>  </a>
               </div>     
               <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle  mx-2 mb-md-2 mb-sm-2 mb-xs-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle  mx-2 mb-md-2 mb-sm-2 mb-xs-2" type="button" id="dropdownMenuButton a13" data-toggle="dropdown" style="margin-bottom: 5%;" aria-haspopup="true" aria-expanded="false">
                          My account
                          </button>
                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" id="a14" data-toggle="modal" data-target="#login">Login</a>
                         <a class="dropdown-item" id="a14" data-toggle="modal"  data-target="#register">Register</a>
-                       <a class="dropdown-item" id="a14" data-toggle="modal"  data-target="#myaccount" href="Myaccount.html">My Account</a>
+                        <a class="dropdown-item" id="a14" data-toggle="modal"  data-target="#myaccount" href="Myaccount.html">My Account</a>
                    </div>
               </div>
-              <div class="dropdown">
-                          <button class="btn btn-secondary dropdown-toggle mb-md-2 mb-sm-2 mb-xs-2 mx-2 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="dropdown ">
+                          <button class="btn btn-secondary dropdown-toggle mb-md-2 mb-sm-2 mb-xs-2 mx-2 " type="button" id="dropdownMenuButton a13" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                            Settings <i class="fa fa-gear fa-spin" style="font-size:20px"></i>
                           </button>
                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                          <a class="dropdown-item" id="a14" href="#">Account Settings</a>
                          <a class="dropdown-item" id="a14" href="#">More Settings</a>
+
                    </div> 
         
                </div>
          </div>
+         </div>
        </div>
-
 
 
 
@@ -75,6 +76,7 @@
 
 
 
+       
        <nav class="navbar navbar-expand-lg navbar-light navigation">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="container1234" onclick="myFunction(this)">
@@ -84,15 +86,16 @@
                 </div>
 
             </button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav justify-content-center navigation">
               <li class="nav-item col-lg-auto col-md-12 col-12 ml-0 mx-3" id="a16">
-                 <a class="nav-link active"  id="a17" href="index.html">Home</a>
+                 <a class="nav-link "  id="a17" href="index.html">Home</a>
               </li>
-              <li class="nav-item col-lg-auto col-md-12 col-12 mr-auto  mx-3" id="a16">
+              <li class="nav-item col-lg-auto col-md-12 col-12  mx-3" id="a16">
                  <a class="nav-link" id="a17" href="shop.html">Computers</a>
               </li>
-              <li class="nav-item col-lg-auto col-md-12 col-12 ml-0" id="a16">
+              <li class="nav-item col-lg-auto col-md-12 col-12 ml-0 d-block d-md-none d-xl-block" id="a16">
                   <a class="nav-link"  id="a17" href="#" >PC Components</a>
              </li>
              <li class="nav-item col-lg-auto col-md-12 col-12  mx-3" id="a16">
@@ -101,10 +104,10 @@
              <li class="nav-item col-lg-auto col-md-12 col-12 mx-3" id="a16">
                   <a class="nav-link"  id="a17" href="#" >Tablets</a>
              </li>
-             <li class="nav-item col-lg-auto col-md-12 col-12 mx-3" id="a16">
+             <li class="nav-item col-lg-auto col-md-12 col-12 mx-3 d-block d-md-none d-xl-block" id="a16">
                   <a class="nav-link"  id="a17" href="#" >TVs</a>
              </li>
-             <li class="nav-item col-lg-auto col-md-12 col-12 ml-auto  mx-3" id="a16">
+             <li class="nav-item col-lg-auto col-md-12 col-12 ml-auto d-block d-md-none d-xl-block  mx-3" id="a16">
                   <a class="nav-link"  id="a17" href="#" >Contact Us</a>
              </li>
       </div>
@@ -130,13 +133,13 @@
     </div>
     <div class="row">
       <div class="col-md-1 col-12 ml-3">
-                        <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="single1.png"><img
+                        <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="img/single1.png"><img
                                 class="img-fluid" src="img/single1.png"/></a>
-                        <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="single.png"><img
+                        <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="img/single.png"><img
                                 class="img-fluid" src="img/single.png"/></a>
-                        <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="single3.png"><img
+                        <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="img/single3.png"><img
                                 class="img-fluid" src="img/single3.png"/></a>
-                        <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="single4.png"><img
+                        <a class="border d-inline-block m-1 p-1" data-fancybox-trigger="preview" href="img/single4.png"><img
                                 class="img-fluid" src="img/single4.png"/></a>
 
       </div>
@@ -199,7 +202,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <button class="btn btn-primary" id="btn123456" data-toggle="modal" data-target="#staticBackdrop123">Add To Cart</button>
+                        <div class="btn" id="btn123456" data-toggle="modal" data-target="#staticBackdrop123">Add To Cart</div>
                     </div>
                 </form>
                     </div>
@@ -298,7 +301,7 @@ Turn up the music with Acer TrueHarmony™, bringing you deeper bass and more vo
 
     </div>
     <div class="row justify-content-center">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" > 
   <img src="img/single.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Acer</h5>
@@ -308,7 +311,7 @@ Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot ant
   </div>
 </div>
  </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card"> 
   <img src="img/single4.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Acer</h5>
@@ -318,7 +321,7 @@ Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot ant
   </div>
 </div>
  </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card"> 
   <img src="img/single2.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Acer</h5>
@@ -328,7 +331,7 @@ Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot ant
   </div>
 </div>
  </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card"> 
   <img src="img/single3.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Acer</h5>
@@ -338,7 +341,7 @@ Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot ant
   </div>
 </div>
  </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card" style="width: 18rem;"> 
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2"> <div class="card"> 
   <img src="img/single4.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Acer</h5>
@@ -505,7 +508,7 @@ Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot ant
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <a href="checkout.html"><button type="button" class="btn btn-primary" id="button12345">Buy Now</button></a>
+        <a href="checkout.html"><button type="button" class="btn" id="btn12345">Buy Now</button></a>
       </div>
     </div>
   </div>
@@ -759,6 +762,10 @@ Maintain a strong, consistent wireless signal with Wi-Fi 5The strategic slot ant
 })
 
     </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     
   </body>
 </html>

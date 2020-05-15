@@ -2,6 +2,10 @@
 .header{
 	background-color: black;
 }
+body{
+	overflow-x: hidden;
+	background-color: black;
+}
 #a11{
   background-color:#FCC821  ;
   border: none;
@@ -19,6 +23,7 @@
 #a13{
 	background-color: gray;
 	border:gray;
+	margin-bottom: 5%;
 }
 #a14:hover{
 	background-color:#FCC821;
@@ -31,12 +36,13 @@
 	background-color: black;
 }
 #a16{
+
 	background-color: black;
 	text-align: center;
 	font-size: 28px;
 }
 #a16:hover{
-	background-color: #FCC821;
+	
 	color:white;
 	border-radius: 3%;
 }
@@ -45,6 +51,7 @@
 }
 #a17:hover{
 	color:black;
+	border-radius: 5%;
 }
 .bar1, .bar2, .bar3 {
   width: 35px;
@@ -91,7 +98,7 @@ a,p,h1,h2,h3,h4,h5,h6, .btn, a, .btn1234 {
   background-color:  #FCC821;
   border: none;
   color:black;
-  padding: 16px 32px;
+  padding: 8px 16px;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
@@ -263,5 +270,10 @@ span.price {
   color: grey;
 }
 
-
-
+th, td{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.bl{
+	background-color: black;
+	
+}
